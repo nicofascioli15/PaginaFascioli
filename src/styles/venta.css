@@ -9,3 +9,35 @@
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+.tituloRef{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tituloPropiedad {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.propiedadCaracteristicas {
+     display: flex;
+     justify-content: space-between;
+}
+
+.card > .propiedadDetalles {
+    background-color: rgb(27, 67, 95);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.icono {
+    padding: 15px;
+}
+
+.propiedadPrecio {
+    font-weight: 900;
+    color:  rgb(27, 67, 95) ;
+    padding-top: 1.5rem;
+}

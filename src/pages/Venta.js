@@ -1,5 +1,8 @@
 import propiedades from "../data";
 import "../styles/venta.css"
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBed, faBath,faRulerCombined,faCar } from '@fortawesome/free-solid-svg-icons'
 
 const Venta = () => {
 
@@ -23,12 +26,24 @@ const Venta = () => {
                 </figure>
               </div>
               <div className="card-content">
-                <h2>{dato.titulo}</h2>
-                <div className="content">
-                  {dato.descripcion}
-                  <br />
+                <div className="tituloRef">
+                  <h2 className="tituloPropiedad">{dato.titulo}</h2>
+                  <p>Ref. {dato.id}</p>
+                </div>
+                <div> 
+                  <p>{dato.barrio}, {dato.ciudad}</p>
+                  </div>
+                <div className="content propiedadPrecio">
+                  <p>{dato.moneda} {dato.precio}</p>
+                </div>
+                <div className="propiedadCaracteristicas">
+                  <p className="icono"><FontAwesomeIcon icon={faBed} /> {dato.dormitorios}</p>
+                  <p className="icono" ><FontAwesomeIcon icon={faBath} />{dato.banos}</p>
+                  <p className="icono"><FontAwesomeIcon icon={faRulerCombined} /> {dato.superficie} mts2</p>
+                  <p className="icono" ><FontAwesomeIcon icon={faCar} /> {dato.garage}</p>
                 </div>
               </div>
+              <Link className="propiedadDetalles">Ver Detalles</Link>
             </div>
             </article>
           );
