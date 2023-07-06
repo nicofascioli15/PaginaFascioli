@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(27, 67, 95);
+}
+
+.navBarHeader > .navbar {
+    background-color: rgb(27, 67, 95)
+}
+
+
+
+.navBarHeader {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.navBarHeader > a {
+    max-width: 15%;
+    cursor: pointer;
+}
+  
+.navBarHeader > a > img {
+    width: 100%;
+    background-color: white;
+    border-radius: 2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: .5rem;
+
+
+}
+
+.navBarHeader > nav > ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    
+}
+
+.navBarHeader > nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(79, 127, 161);
+    border-radius: .7rem;
+    padding: 5px 20px;
+    
+}
+
+
+/* Buscador */
+
+
+.fondoBuscador {
+    background-image: url("https://images.unsplash.com/photo-1611145367559-6089dfcdc781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3174&q=80");
+   background-position:center;
+}
+
+.buscador {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height:auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+aside {
+    width: 25rem;
+    background-color: rgba(79, 127, 161, 0.866);
+    padding: 30px;
+    border-radius: .7rem;
+}
+
+aside > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+aside > form > label {
+    margin-bottom: .4rem;
+    margin-top: .4rem;
+}
+
+aside > form > input {
+    margin-bottom: .7rem;
+}
+
+aside > form > select {
+    height: 40px;
+    background-color: white;
+}
+
+aside > form > button {
+    margin-top: 2rem;
+    background-color: rgb(0, 22, 45);
+    color: white;
+    height: 40px;
+    box-shadow: none;
+    border: none;
+
+}
+
+.alertSerch {
+    margin-top: 0.9rem;
+}
+
+.alertSerch > span > a {
+    text-decoration: none;
+    color: white;
+    padding-right: 5px;
+}
+
+
