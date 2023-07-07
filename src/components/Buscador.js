@@ -3,6 +3,7 @@ import {operacion} from "../dataBuscador/operacion.js"
 import {tipoPropiedad} from "../dataBuscador/tipoPropiedad.js"
 import {ubicacion} from "../dataBuscador/ubicacion.js"
 import {dormitorios} from "../dataBuscador/dormitorios.js"
+import {banos} from "../dataBuscador/banos.js"
 
 const Buscador = () => {
 
@@ -39,6 +40,7 @@ const Buscador = () => {
 
                     <label>Banos</label>
                     <Select
+                    options={banos}
                     placeholder="Seleccionar"/>
 
                     <label>Garage</label>

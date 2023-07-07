@@ -1,11 +1,14 @@
 import VentaMuestraPropiedades from "../components/VentaMuestraPropiedades";
+import BuscadorConFiltros from "../components/BuscadorConFiltros";
 
 const VentaPropiedades = () => {
 
   return(
-    
-  <VentaMuestraPropiedades/>
-  )
+    <div>
+    <BuscadorConFiltros/> 
+    <VentaMuestraPropiedades/>
+    </div>
+    )
 };
 
 export default VentaPropiedades;

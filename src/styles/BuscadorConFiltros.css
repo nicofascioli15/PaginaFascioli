@@ -1,0 +1,21 @@
+.buscadorConFiltros {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 35px;
+    height: 5rem;
+    flex-wrap: wrap;
+ 
+}
+
+.buscadorForm {
+    margin: 40px;
+    gap: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    
+    font-size: 16px;
+}

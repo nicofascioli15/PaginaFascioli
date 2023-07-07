@@ -5,22 +5,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBed, faBath,faRulerCombined,faCar } from '@fortawesome/free-solid-svg-icons'
 
 
-const PropiedadesVenta = () => {
+const AlquilerMuestraPropiedades = () => {
 
 
 
-  const propiedadesAlaVenta = propiedades.filter(propiedad => propiedad.operacion == "Venta")
+  const propiedadesAlaVenta = propiedades.filter(propiedad => propiedad.operacion == "Alquiler")
 
 
     return (
         <div className="container">
-          <h3 className="propiedadTitulo">PROPIEDADES EN VENTA</h3>
+          <h3 className="propiedadTitulo">PROPIEDADES EN ALQUILER</h3>
           <section className=" is-flex flex-wrap sectiongap">
             {propiedadesAlaVenta.map((dato) => {
               return (
                 <article key={dato.id}>
                 <div  className="card">
-                  <Link to="/venta/:idPropiedad" className="card-image propiedadCardImagen">
+                  <Link to="/alquiler/:idPropiedad" className="card-image propiedadCardImagen">
                     <figure className="image is-4by3">
                       <img src={dato.imagen} alt="Placeholder image" />
                       <span className="propiedadOperacion">{dato.operacion}</span>
@@ -44,7 +44,7 @@ const PropiedadesVenta = () => {
                       <p className="icono" ><FontAwesomeIcon icon={faCar} /> {dato.garage}</p>
                     </div>
                   </div>
-                  <Link to="/venta/:idPropiedad" className="propiedadDetalles">Ver Detalles</Link>
+                  <Link to="/alquiler/:idPropiedad" className="propiedadDetalles">Ver Detalles</Link>
                 </div>
                 </article>
               );
@@ -54,4 +54,4 @@ const PropiedadesVenta = () => {
       );
 }
 
-export default PropiedadesVenta
+export default AlquilerMuestraPropiedades

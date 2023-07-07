@@ -2,9 +2,9 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Layout from "./pages/Layout"
 import Home from "./pages/Home"
-import Alquiler from "./pages/Alquiler"
+import AlquilerPropiedades from "./pages/AlquilerPropiedades"
 import Contacto from "./pages/Contacto"
-import Propiedad from "./pages/Propiedad"
+import DetallesPropiedad from "./pages/DetallesPropiedad"
 import Error from "./pages/Error"
 import VentaPropiedades from "./pages/VentaPropiedades"
 
@@ -20,8 +20,9 @@ return (
             <Route path="/" element={<Layout/>}>
             <Route index element={<Home/>}/>
             <Route path="venta" element={<VentaPropiedades/>}/>
-            <Route path="venta/:idPropiedad" element={<Propiedad/>}/>
-            <Route path="alquiler" element={<Alquiler/>}/>
+            <Route path="venta/:idPropiedad" element={<DetallesPropiedad/>}/>
+            <Route path="alquiler" element={<AlquilerPropiedades/>}/>
+            <Route path="alquiler/:idPropiedad" element={<DetallesPropiedad/>}/>
             <Route path="contacto" element={<Contacto/>}/>
             <Route path="*" element={<Error/>}/>
             </Route>

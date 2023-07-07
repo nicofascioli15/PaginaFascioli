@@ -4,8 +4,9 @@
     padding-bottom: 3rem;
 }
 
-.tituloVenta {
-    font-size: 40px;
+.propiedadTitulo {
+    font-size: 28px;
+    font-weight: 600;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -32,6 +33,8 @@
     padding: 10px;
 }
 
+
+
 .icono {
     padding: 15px;
 }
@@ -41,3 +44,22 @@
     color:  rgb(27, 67, 95) ;
     padding-top: 1.5rem;
 }
+
+.propiedadOperacion{
+    position: absolute;
+    top: 0;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.propiedadCardImagen {
+    position: relative;
+}
+
+.propiedadCardImagen > figure > img:hover {
+   cursor: pointer;
+}
+

@@ -1,10 +1,10 @@
 import DetallesPropiedadSeleccionada from "../components/DetallesPropiedadSeleccionada"
 
-const Propiedad = () => {
+const DetallesPropiedad = () => {
   return (
    
     <DetallesPropiedadSeleccionada/>
   )
 }
 
-export default Propiedad
+export default DetallesPropiedad
