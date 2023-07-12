@@ -28,7 +28,7 @@
 
 .card > .propiedadDetalles {
     background-color: rgb(27, 67, 95);
-    color: white;
+    color: rgb(240, 239, 239);
     text-align: center;
     padding: 10px;
 }
